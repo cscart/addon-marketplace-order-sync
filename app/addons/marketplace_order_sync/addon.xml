@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>marketplace_order_sync</id>
+    <version>1.0.0</version>
+    <position>0</position>
+    <status>active</status>
+    <default_language>en</default_language>
+    <priority>100</priority>
+    <supplier>CS-Cart</supplier>
+    <settings edition_type="ROOT">
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="login">
+                        <type>input</type>
+                        <default_value/>
+                    </item>
+                    <item id="key">
+                        <type>password</type>
+                        <default_value/>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    <compatibility>
+        <core_version>
+            <min>4.10.1</min>
+        </core_version>
+    </compatibility>
+</addon>

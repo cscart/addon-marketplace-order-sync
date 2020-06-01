@@ -1,0 +1,25 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Addons::name::marketplace_order_sync"
+msgid "Marketplace orders synchronization"
+msgstr "Marketplace orders synchronization"
+
+msgctxt "Addons::description::marketplace_order_sync"
+msgid "Provides an API client for CS-Cart Marketplace to register sales of your add-ons and themes performed outside of CS-Cart Marketplace."
+msgstr "Provides an API client for CS-Cart Marketplace to register sales of your add-ons and themes performed outside of CS-Cart Marketplace."
+
+msgctxt "SettingsSections::marketplace_order_sync::general"
+msgid "General"
+msgstr "General"
+
+msgctxt "SettingsOptions::marketplace_order_sync::login"
+msgid "API login"
+msgstr "API login"
+
+msgctxt "SettingsOptions::marketplace_order_sync::key"
+msgid "API key"
+msgstr "API key"
