@@ -52,6 +52,14 @@ class LicenseTest extends ATestCase
                 ],
                 new License(new DateTimeImmutable('2020-01-01 00:00:00+00:00'), 'example.com'),
             ],
+            [
+                [
+                    'expires_on'     => '2020-01-01',
+                    'domain'         => 'example.com',
+                    'license_number' => 'MP-1111-1111-1111-1111',
+                ],
+                new License(new DateTimeImmutable('2020-01-01 00:00:00+00:00'), 'example.com', 'MP-1111-1111-1111-1111'),
+            ]
         ];
     }
 }

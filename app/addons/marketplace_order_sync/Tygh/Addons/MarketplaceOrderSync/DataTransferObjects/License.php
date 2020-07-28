@@ -30,15 +30,22 @@ final class License implements Arrayable
     public $domain;
 
     /**
+     * @var string
+     */
+    protected $license_number;
+
+    /**
      * License constructor.
      *
      * @param \DateTimeImmutable $expires_on
      * @param string             $domain
+     * @param string             $license_number
      */
-    public function __construct(DateTimeImmutable $expires_on, $domain = '')
+    public function __construct(DateTimeImmutable $expires_on, $domain = '', $license_number = '')
     {
         $this->expires_on = $expires_on;
         $this->domain = $domain;
+        $this->license_number = $license_number;
     }
 
     /**
@@ -58,14 +65,20 @@ final class License implements Arrayable
             $domain = $license_data['domain'];
         }
 
-        return new self($expires_on, $domain);
+        $license_number = '';
+        if (isset($license_data['license_number'])) {
+            $license_number = $license_data['license_number'];
+        }
+
+        return new self($expires_on, $domain, $license_number);
     }
 
     public function toArray()
     {
         return [
-            'expires_on' => $this->expires_on->format('Y-m-d'),
-            'domain'     => $this->domain,
+            'expires_on'     => $this->expires_on->format('Y-m-d'),
+            'domain'         => $this->domain,
+            'license_number' => $this->license_number,
         ];
     }
 }

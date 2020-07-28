@@ -45,8 +45,9 @@ class ProductTest extends ATestCase
                 'external_id' => 'foo',
                 'amount'      => 1,
                 'license'     => [
-                    'expires_on' => '2020-01-01',
-                    'domain'     => '',
+                    'expires_on'     => '2020-01-01',
+                    'domain'         => '',
+                    'license_number' => '',
                 ],
             ],
             $product->toArray()
